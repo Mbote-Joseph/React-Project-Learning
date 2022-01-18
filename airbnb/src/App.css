@@ -86,7 +86,7 @@
 .card {
   width: 376px;
   height: 400px;
-  margin-left: 37px;
+  margin-left: 30px;
   margin-top: 21px;
 
   /* background-image: url(./images/image\ 12.png); */
@@ -111,4 +111,13 @@
 }
 span {
   margin-left: 5px;
+}
+
+.card .photo {
+  width: 320px;
+  height: 370px;
+
+  /* background-image: url(./images/image\ 12.png); */
+  border-radius: 9px;
+  background-repeat: no-repeat;
 }
