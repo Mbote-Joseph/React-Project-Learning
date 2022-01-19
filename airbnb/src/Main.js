@@ -14,7 +14,13 @@ const Main = () => {
         lesson={card.lesson}
         price={card.price}
         stats={card.stats}
+        openSpots={card.openSpots}
       />
+
+      /*
+      ==== Another way where we pass an object as a prop
+        <Card key={i} data={card} />
+      */
     );
   });
 

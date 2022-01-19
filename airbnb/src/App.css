@@ -90,6 +90,7 @@
   margin-right: 70px;
   margin-top: 21px;
   margin-bottom: 200px;
+  flex-direction: column;
 
   /* background-image: url(./images/image\ 12.png); */
   border-radius: 9px;
@@ -103,6 +104,9 @@
 .cards-main {
   display: flex;
   justify-content: space-between;
+  /* flex-direction: column; */
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 .stats {
   display: flex;
@@ -122,4 +126,14 @@ span {
   /* background-image: url(./images/image\ 12.png); */
   border-radius: 9px;
   background-repeat: no-repeat;
+}
+.card--badge {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+  z-index: 2px;
 }
