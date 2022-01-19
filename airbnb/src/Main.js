@@ -21,6 +21,14 @@ const Main = () => {
       ==== Another way where we pass an object as a prop
         <Card key={i} data={card} />
       */
+
+      /*
+        Using spread operaters
+        <Card 
+         key={i}
+         {...card} //This will have passed image={image} lesson={lesson} price={price} stats={stats} openSpots={openSpots}
+
+        */
     );
   });
 
