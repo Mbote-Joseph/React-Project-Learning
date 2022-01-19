@@ -6,9 +6,10 @@ import Home from "./Home";
 import data from "./data";
 
 const Main = () => {
-  const cardData = data.map((card) => {
+  const cardData = data.map((card, i) => {
     return (
       <Card
+        key={i}
         image={card.image}
         lesson={card.lesson}
         price={card.price}

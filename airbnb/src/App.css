@@ -86,8 +86,10 @@
 .card {
   width: 376px;
   height: 400px;
-  margin-left: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
   margin-top: 21px;
+  margin-bottom: 200px;
 
   /* background-image: url(./images/image\ 12.png); */
   border-radius: 9px;
