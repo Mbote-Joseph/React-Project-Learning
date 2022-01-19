@@ -2,37 +2,47 @@ import React from "react";
 import Card from "./Card";
 // import Contact from "./Contact";
 import Home from "./Home";
-import Katie from "./images/image 12.png";
-import Wedding from "./images/wedding-photography 1.png";
-import Mountain from "./images/mountain-bike 1.png";
+
+import data from "./data";
 
 const Main = () => {
+  const cardData = data.map((card) => {
+    return (
+      <Card
+        image={card.image}
+        lesson={card.lesson}
+        price={card.price}
+        stats={card.stats}
+      />
+    );
+  });
+
   return (
     <div className="main">
       <Home />
-      <div className="cards-main">
-        <Card
-          image={Katie}
-          lesson="Life lessons with Katie Zaferes"
-          price={136}
-          stats={{ rating: 5.0, voters: 6, country: "USA" }}
-        />
-        <Card
-          image={Wedding}
-          lesson="Learn wedding photography"
-          price={125}
-          stats={{ rating: 4.8, voters: 15, country: "UK" }}
-        />
-        <Card
-          image={Mountain}
-          lesson="Group Mountain Biking"
-          price={50}
-          stats={{ rating: 4.7, voters: 37, country: "Russia" }}
-        />
-      </div>
+      <div className="cards-main">{cardData}</div>
     </div>
   );
 };
 
 export default Main;
 //  <Contact />
+
+// <Card
+// image={Katie}
+// lesson="Life lessons with Katie Zaferes"
+// price={136}
+// stats={{ rating: 5.0, voters: 6, country: "USA" }}
+// />
+// <Card
+// image={Wedding}
+// lesson="Learn wedding photography"
+// price={125}
+// stats={{ rating: 4.8, voters: 15, country: "UK" }}
+// />
+// <Card
+// image={Mountain}
+// lesson="Group Mountain Biking"
+// price={50}
+// stats={{ rating: 4.7, voters: 37, country: "Russia" }}
+// />
