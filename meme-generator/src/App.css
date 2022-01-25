@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  /* height: 40vmin; */
   pointer-events: none;
 }
 
@@ -35,4 +35,73 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 70px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  justify-content: space-between;
+}
+
+.header-title {
+  margin-left: 10px;
+  align-items: center;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30.7482px;
+  line-height: 34px;
+  letter-spacing: -0.1em;
+
+  color: #ffffff;
+}
+.header-title1 {
+  margin-right: 20px;
+  align-items: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: right;
+
+  color: #ffffff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.input-fields input {
+  height: 40px;
+  min-width: 420px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: 1px solid #d5d4d8;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.form button {
+  min-height: 50px;
+  margin-top: 40px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  border-radius: 5px;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-align: center;
+  /* letter-spacing: 0.2em; */
+
+  color: #ffffff;
 }
